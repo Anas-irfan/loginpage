@@ -1,0 +1,228 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: tahoma;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+nav{
+	position: fixed;
+	top:0px;
+	width: 100%;
+	height: 80px;
+	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+	box-shadow: rgba(0,0,0.2) 0 2px 6px 0;
+}
+
+ul{
+	list-style-type: none;
+
+}
+
+ul li{
+	float: left;
+	width: 140px;
+	font-size: 20px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+}
+
+ul li a.nav{
+	text-decoration: none;
+	color: #000;
+	display: block;
+	transition: 0.6s all;
+}
+
+ul li a.nav:hover{
+	background-color: #fff;
+	color: black;
+	transition: 0.6s all;
+}
+
+.signup{
+	margin-right: 20px;
+	float: right;
+	font: bold;
+}
+
+.signuplogo img{
+	position: absolute;
+	background-color: #000;
+	height: 20px;
+	width: 20px;
+	float: left;
+	margin-top: 30px;
+	right: 30px;
+}
+.signuplogo img:hover{
+	border: 5px transparent blue;
+	backg round-color: blue;
+	border-radius: 40px;
+}
+
+ul li ul li{
+
+	display: none;
+	background-color: #fff;
+	box-shadow: rgba(0,0,0.2) 0 2px 6px 0;
+	height: 60px;
+	font-size: 15px;
+	transition: 1s all;
+	overflow: hidden;
+
+
+}
+
+ul li:hover ul li{
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	animation: drop 1s ease;
+	background-color: #2344;
+	font-color: #000;
+
+}
+
+@keyframes drop{
+	0%{
+		transform: scale(2,2) rotate(90deg);
+	}
+	100%{
+		transform: scale(1,1) rotate(0deg);
+	}
+}
+
+h1{
+	color: #3f212f;	
+	height: 80px;
+	padding: 20px 0px;
+	width: 100%
+	font-family: fantasy;
+	text-align: center;
+	box-sizing: 100px;
+}
+
+ 
+ body{
+ 	background: cover  no-repeat;
+ 	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../background-1.jpg);
+	height: 100vh;
+	background-position: center;
+	padding-top: 80px;
+}
+
+   .login{
+   	margin: auto;
+   	background-color: rgb(0,0,0,0.5);
+   	padding: 40px;
+   	border-radius: 5px;
+   	box-shadow: 0 0 10px #000;
+   	position: absolute;
+   	top: 70%;
+   	bottom: 50%;
+   	margin-left: 200px;
+   	float: right;
+   	width: 60%;
+   	height: 430px;
+   	display: block;
+   }
+
+   .container{
+   	width: 100%;
+   	display: block;
+   }
+
+.login:before{
+	background-image: url(login.png);
+	width: 100%;
+	height: 100%;
+}
+
+.login .headertext{
+	font-size: 32px;
+	font-weight: 600;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+.login input{
+	margin: 10px 0;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 16px;
+}
+
+.login input[type=checkbox]{
+	display: ;
+
+}
+
+.login label{
+	position: relative;
+	margin-left: 5px;
+	margin-right: 10px;
+	top: 5px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.login label:before{
+	content: '' ;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background-color: #ddd;
+
+}
+
+.login input[type=checkbox]:checked + label:before{
+	content: '\2731' ;
+	font-size: 20px;
+	color: #262626;
+	text-align: center;
+	line-height: 20px;
+
+}
+
+.login button{
+	background-color: #fb5a2f;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+	padding: 10px;
+	margin: 20px 0;
+
+}
+
+.log{
+	color: white;
+}
+
+.shadow{
+	overflow: hidden;
+	color: transparent;
+	transition: 0.3s all ease;
+	text-shadow: 0 0 0 #fff,0 45px 0 #000;	
+}
+
+.shadow:hover{
+	text-shadow: 0 -45px 0 #fff,0 0 0 #000;	
+}
+	@media (max-width: 400px) {
+.login{
+	width: 90% !important;
+}
+		}
